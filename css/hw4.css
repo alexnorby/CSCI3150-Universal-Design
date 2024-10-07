@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
+body{
+
+background-color: #f1f6f7;
+color : #030000;
+font-family: 'Ubuntu', 'Raleway';
+font-size: 18px;
+}
+
+p{
+
+margin-bottom: 1.8em;
+font-family: 'Raleway';
+
+/* this is important for readability */
+line-height: 1.5em;
+
+}
+
+figure{
+text-align: center;
+}
+
+.container{
+max-width: 960px;
+margin: 0 auto;
+}
+
+h1,h2,h3,h4{
+font-family: 'Raleway';
+
+}
+/* will need this for screenreader */ 
+
+.sr-only {
+border: 0;
+clip: rect(0, 0, 0, 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+
+}
