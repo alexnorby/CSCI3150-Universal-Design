@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Lifted Content</title>
+  <link href="hw5.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    
+
+    <a class="skip-link" href="#main">Skip Navigation</a>
+    <header>
+        <h1>HW 5 Lifted Content</h1>
+        <time class = "sr-only" datetime="2024-10-20">October 20, 2024</time>
+
+    </header>
+    <nav>
+        <h2 class="sr-only">Main Navigation</h2>
+
+        <ul>
+            <li><a href="#about">About</a><span aria-hidden="true" class ="material-icons"> home </span> </li>
+            <li><a href="#table">Teams in the NFL</a> <span aria-hidden="true" class ="material-icons"> groups </span> </li>
+            <li><a href="#form">Fill out a form </a> <span aria-hidden="true" class ="material-icons"> person_alert </span></li>
+            <li><a href="#faq">Frequently Asked Questions</a> <span aria-hidden="true" class ="material-icons"> help </span></li>
+            <li><a href="#quotes">Cool Quotes and Pictures</a> <span aria-hidden="true" class ="material-icons"> image</span></li>
+                
+        </ul>
+    </nav>
+
+<main id="main">
+
+  
+  <section id="about">
+    <h2>About</h2>
+    <p> This is a webpage about the history and current information about the <mark>National Football League</mark> 
+      People usually refer to the league as the NFL for short. The NFL was created on September 17, 1920 about 104 years ago. 
+      Since then there are now 8 divisions with 4 teams in each to make a total of 32 teams! 
+    </p>
+  </section>
+  <figure>
+      <img src="NFL-logo.png" class="img-fluid" style="margin: 100px; height: 400px; width: 500px;" alt="This is an image of of the current NFL Logo. It has changed 
+      throughout the years but the current one has the letters N, F, L with a shield background ">
+
+      <figcaption class="sr-only">Current NFL Logo</figcaption>
+    
+      
+  </figure>
+  <section id="table">
+    <h2>Teams in NFL</h2>
+
+    <table>
+      <caption> AFC Conference </caption>
+      <thead>
+      <tr> <!-- AFC-->
+          <th scope="col">AFC North</th>
+          <th scope="col">AFC West</th>
+          <th scope="col">AFC South</th>
+          <th scope="col">AFC East</th>
+
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>Baltimore Ravens</td>
+          <td>Denver Broncos</td>
+          <td> Jacksonville Jags </td>
+          <td>New York Jets</td>
+
+      </tr>
+      <tr>
+          <td> Cincinnati Bengals </td>
+          <td> LA Chargers</td>
+          <td> Tennesse Titans </td>
+          <td> New England Pats</td>
+
+      </tr>
+      <tr>
+          <td>Cleveland Browns</td>
+          <td>K.C Chiefs </td>
+          <td> Indy Colts </td>
+          <td>Miami Dolphins</td>
+
+      </tr>
+      <tr>
+          <td>Pittsburgh Steelers </td>
+          <td> Las Vegas Raiders</td>
+          <td> Houston Texans</td>
+          <td>Buffalo Bills</td>
+          
+        </tr>
+        
+      </table>
+      
+      <table>
+        <caption> NFC Conference </caption>
+        <thead>
+          <tr> <!-- NFC-->
+            <th scope="col">NFC North</th>
+            <th scope="col">NFC West</th>
+            <th scope="col">NFC South</th>
+            <th scope="col">NFC East</th>
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Detroit Lions</td>
+            <td>Seattle Seahawks </td>
+            <td>Panthers</td>
+            <td>Dallas Cowboy</td>
+            
+          </tr>
+          <tr>
+            <td> Minnesota Vikings  </td>
+            <td>San Fran 49ers</td>
+            <td>Falcons </td>
+            <td>New York Giants</td>
+            
+          </tr>
+          <tr>
+            <td>Chicago Bears</td>
+            <td>Arizona Cardinals</td>
+            <td>N.O Saints</td>
+            <td>D.C Commanders</td>
+            
+          </tr>
+          <tr>
+            <td>Green Bay Packers </td>
+            <td>LA Rams</td>
+            <td>T.B Buccaneers </td>
+            <td>Philly Eagles</td>
+            
+          </tr>
+          
+        </table>
+        
+        
+      </section>
+      
+
+  <section id="application">
+    <h2>Subscription Form </h2>
+      <form id="form" method="post">
+      <fieldset>
+        <legend>Give us your information!</legend>
+
+        <label for="username">
+        What is your name?
+        <input type="text" id="username" required>
+        </label>
+
+        <label for="email">
+        What is your email?
+        <input type="email" id="email">
+        </label>
+
+        <label for="website">
+        What is your website?
+        <input type="url" id="website">
+        </label>
+
+        <label for="phone">
+        What is your phone number?
+        <input type="tel" id="phone" minlength="7">
+        </label>
+
+        <label for="age">
+        How old are you?
+        <input type="number" id="age">
+        </label>
+
+        <label for="password">
+        What is your favorite password?
+        <input type="text" id="password" maxlength="20" minlength="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*" required>
+        </label>
+        <ul class="inputRequirements">
+            <li>must be at least 5 characters and contain uppercase, lowercase, number and symbol</li>
+          </ul>
+
+          <label for="lift">
+            Do you want to subscribe? (Y/N)
+            <input type="text" id="lift" name="lift" maxlength="1" minlength="1" pattern="[YNyn]" required>
+        </label>
+
+
+        
+
+
+      <input type="submit" value="Submit">
+      </fieldset>
+      </form>
+    </section>
+
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+            <summary> Basic Questions</summary>
+            <p>Q: How many teams are in NFL? A: 32</p>
+            <p>Q: What year was it founded? A: 1920</p>
+            <p>Q: Who won the last superbowl? A: Kansas City Chiefs</p>
+            <p>Q: What franchise has the most superbowls? A: New England Patriots and Steelers (tied at 6). </p>
+
+
+        </details>
+    </section>
+
+
+
+    <section id="quotes">
+        <h2>Cool Pictures and Quotes</h2>
+        <blockquote cite="https://www.southernliving.com/culture/football-quotes">
+            <q style="font-family: Georgia, 'Times New Roman', Times, serif;">The man on top of the mountain didn't fall there.</q> - Vince Lombardi <br>
+            <q style="font-family: Georgia, 'Times New Roman', Times, serif;">The most valuable player is the one who makes the most players valuable.</q> - Peyton Manning 
+
+        </blockquote>
+
+
+        <figure>
+          <img src="OBJ-Onehanded.jpg" class="img-fluid" style="margin: 100px; height: 350px; width: 500px;" alt="This is a picture of 
+          Odell Beckham Jr. He is making his iconic one handed catch against the cowboys. ">
+    
+          <figcaption class="sr-only">Odell Beckham making one handed catch </figcaption>
+        
+          
+      </figure>
+
+      <figure>
+        <img src="ray-lewis.jpg" class="img-fluid" style="margin: 100px; height: 400px; width: 500px;" alt="Linebacker Ray Lewis staring at Tom Brady before the snap ">
+  
+        <figcaption class="sr-only">Ray Lewis faces Tom Brady</figcaption>
+      
+        
+    </figure>
+    </section>
+
+</main>
+<footer>
+    <p> Alex Norby
+    <address>
+      <a href="mailto:alno1200@colorado.edu"> alno1200@colorado.edu</a>
+    </address>
+    <small>&copy; 2024</small>
+  </footer>
+</body>
+</html>
