@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Accessible grid</title>
-    <link href="html/index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Alex Norby</h1>
-      </header>
-      <nav>
-        <ul>
-          <h2 class="sr-only">Main Navigation</h2>
-          <li><a href="#aboutme">About Me </a></li>
-          <li><a href="html/hw4.html">4 - Coding and Posting Webpage</a></li>
-          <li><a href="html/hw5.html">5 - Tables and Foms</a></li>
-          <li><a href="html/hw6.html">6 - Accessible Class Portal</a></li> 
-          <li><a href="html/final.html">Final Project 1</a></li> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <title> CSCI 3150 Index</title>
 
-          
-          
-        </ul>
-      </nav>
-      <main>
-        <section id="aboutme">
-          <h1>About Me</h1>
-          <p>
-            Hi, my name is Alex Norby and I am currently a senior here at
-            boulder studying Computer Science. Some of my hobbies include
-            skiing, soccer and traveling. I have lived in Colorado my whole life
-            but plan to try and live other places after a graduate. About 7
-            months ago I broke 5 vertabrae in my back doing a backflip on skis.
-          
-          </p>
-          <img
-            src="html/IMG_9702.jpg"
-            style="height: 300px; align-self: center"
-            alt="Me and my brother on cruise ship with view behind"
-          />
-        </section>
-      </main>
-      <aside id="aside1">
-        <h2 class="sr-only">Picture column 1</h2>
-        <img
-          src="html/IMG_3722.jpg"
-          style="height: 300px"
-          alt="Selfie with family with Roman collesuem in background."
-        />
-      </aside>
-      <aside id="aside2">
-        <h2 class="sr-only">Picture column 2</h2>
-        <img
-          src="html/IMG_3551.jpeg"
-          style="height: 300px; width: 180px; align-self: center"
-          alt="My Dog Baxter on porch"
-        />
-      </aside>
-      <footer>
-        <small> designed by me for EVERYBODY</small>
-      </footer>
+    <div class="container">
+        <header>
+            <h1>CSCI 3150 Landing Page</h1>
+        </header>
+        
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href="html/hw4.html">Lab 2</a></li>
+                <li><a href="html/hw5.html">Lab 3</a></li>
+                <li><a href="html/hw6.html">Lab 4</a></li>
+                <li><a href="html/final.html">Final Project</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper">
+    
+            <aside id="aside2">
+                <h2 class="sr-only">About Picture 1</h2>
+                <figure>
+                    <img src="html/IMG_3722.jpg" alt="Picture of me">
+                </figure>
+            </aside>
+            
+        
+            <main id="main">
+                <h2 style = "text-align: center;" class="sr-only"> Abbout me</h2>
+                <p style="position:static">
+                    Hey! My name is Alex Norby and I am currently a senior in Computer Science here at CU. Some things I really like to do include 
+                    traveling, playing soccer, and skiing. I have lived in Colorado my whole life and would love to live somewhere else after college. Some cool 
+                    facts about me is that I can solve a Rubik's cube, and I went on a European cruise this summer.
+                </p>
+                <p> To the left you can see me and my family at the colosseum in Rome. On the left is my dog Baxter. He is a red fox lab.</p>
+            </main>
+            
+      
+            <aside id="aside3">
+                <h2 class ="sr-only"> About Picture 2 </h2>
+                <figure>
+                    <img src="html/IMG_3551.jpeg" alt="Picture of Baxter the good boy">
+                </figure>
+            </aside>
+        </div>
+
+        <footer>
+            <small>Designed by Alex Norby</small>
+        </footer>
     </div>
-    <!-- end container -->
-  </body>
+</body>
 </html>
