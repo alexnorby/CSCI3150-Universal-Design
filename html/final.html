@@ -1,125 +1,105 @@
-<html lang="en"></html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Final Project</title>
-<!-- css here-->
-<link href="../css/hw4.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational content on universal design for the web">
+    <title>Universal Design Project 2</title>
+    <link rel="stylesheet" href="final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<div class="container"> 
-<!--Main heading of page - only use h1 once per page-->
-<header>
-<h1 > Universal Design</h1>
-</header>
-
-
-
-
-<!-- Main navigation -->
-<nav aria-label="Main Navigation">
-    <h2 class="sr-only">Main Navigation</h2>
-    <ul>
-        <li class="linkfont"><a href="#what">What is Universal Design?</a></li>
-        <li class="linkfont"><a href="#why">Why is Universal Design so Important?</a></li>
-        <li class="linkfont"><a href="#how">How do we use Universal Design?</a></li>
-        <li class="linkfont"><a href="#">Back to Top</a></li>
-    </ul>
-</nav>
-
-
-<img src="Accesibility and universal design.png" class="img-fluid" style="margin: 100px; height: 400px; width: 800px;" alt="This is an image that says Accessibility +  ">
-
-
-<!-- Main content of the page -->
-<main>
-<!-- Grouping content together -->
-<section id="what">
-<h2 >What is Universal Design?</h2>
-
-
-    <ul>
-    <li>Give definition for it</li>
-    <li>Talk about who is affected by it</li>
-    <li>List certain disabilities that pertain to it.</li>
-    <li>Picture</li>
-
-</ul>
-
-</section>
-
-
-
-<section id="why">
-
-<h2>Why is Universal Design so Important? </h2>
-<ul></ul>
-    <li>Can list out demographic information from weeks 1-3. It affects a lot more people than we realize. 
-    </li>
-    <li>What standards we must achieve. Utilizing web design standards using WCAG -2.2 and ADA. 
-    </li>
-    <li>Picture</li>
-
-</ul>
-
-
-
-
-</section>
-<section id="how">
-    <h2>How do we use Universal Design?</h2>
+    <header>
+        <a href="#main-content" class="skip-link">Skip to Main Content</a>
+        <div class="header-content">
+            <h1>Universal Design Website</h1>
+            <nav>
+                <h2 class="sr-only">Main Navigation</h2>
+                <ul>
+                    <li><a href="final.html">What</a></li>
+                    <li><a href="why.html">Why</a></li>
+                    <li><a href="how.html">How</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav>
+        <h2 class="sr-only">Page Navigation</h2>
+        <ul>
+            <li style="color: black;"> <a href="#section1" style="color: black;">What is Universal Design? </a></li>
+            <li class="linkfont"><a href="#section2" style="color: black;">What disabilities are Impacted?</a></li>
+            <li class="linkfont"><a href="#section3" style="color: black;">Real World Examples </a></li>
+            <li class="linkfont"><a href="#section4" style="color: black;">Principles of Design</a></li>
+            
+        </ul> 
+    </nav>
     
-    <ul>
-        <li>Explain web standards </li>
-        <li>Universal design principles </li>
-        <li>Meta data, structure, and semantics </li>
-        <li>Universal design principles </li>
-        <li>Screen readers and tables.</li>
-        <li>Responsive, legible, and accessible CSS 
-        </li>
-        <li>Picture</li>
 
-    
-    </ul>
-    
-    </section>
-    
-    
-    </p>
+    <div class="container">
+        
+        <main>
+            <section >
+                <h2 class="sr-only">Picture/Logo</h2>
+                <ul>
+                <figure>
+                    <img src="universal_design_graphic07-1656004828407.webp" style="width: 400px; height: 400px;" class = "center-image" alt="A picture that says design for all">
+                    
+                </figure>
+            </section>
+
+            <section id ="section1">
+            <h2 id="main-content">What is Universal Design?</h2>
+            <p style="color: white;">Universal Design refers to the concept of creating products and environments that are accessible and usable by 
+                as many people as possible, regardless of age, ability, or disability. The goal is to ensure that all individuals, no matter the disability, are able to 
+                effectivley use and access all parts of the internet. It aims to create accessible, inclusive, and flexible designs that work for all people. </p>
+            </section>
+
+            
+            <section id="section2">
+                <h2 id="main-content"> What Disabilities are Impacted? </h2>
+                <p style="color: white;">There are various disablities that impact people from a day to day basis when it comes to accessing and using the internet.
+                    Some of these include blindness, low vision, deafness, mobility impairments and learning disabilites. Those with blindness and low vision may need screen readers to assist
+                    them naviagting the page. Also color contrast is huge for this disability. 
+                    
+                </p>
+            </section>
+            
+            <section id="section3">
+                <h2 id="main-content">Real World Examples </h2>
+                <p style="color: white;">
+                    When it comes to universal design it is a good idea to relate it to the real world. How do we make building and physical objects more accessible? 
+                    Some may put ramps instead of stairs so people in wheelchairs can get up easily. Also highways may have signs that are easy to read from a distance 
+                    so people can get off at the right exit. Universal Design applies to all aspects of life and not just the internet. Inclusive design is the idea that the 
+                    design and acccessibility equals Inclusive Design. 
+                </p>
+                </section>
 
 
-<!-- informational images -->
-<figure>
-<!-- supplementary info -->
-<aside>
-<h2>More Links and Info</h2>
-have links here for documentation and other important information.  
-<ul>
 
-</ul>
-</aside>
-</figure>
-</section>
+            
+        </main>
 
-</main>
+        <aside id="section4">
+            <h2>Principles of Universal Design</h2>
+            <p style="color: rgb(3, 3, 3);">
+                The principles of design start from the premise tha there is no typical average, or normal user. Rather there is a basic understanding that the user context
+                eill vary widely based on circumstances. This proccess makes sure that any needs arising from differences are met by design. 
+            </p>
+            <ul>
+                <li>Equitable Use: The design is useful and marketable to people with diverse abilities. </li>
+                <li>Flexibility in Use: The design accommodates a wide range of individual preferences and abilities.</li>
+                <li>Simple, Intuitive Use: Use of the design is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level. </li>
+                <li>Perceptible Information: The design communicates necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities.</li>
+                <li>Tolerance for Error:The design minimizes hazards and the adverse consequences of accidental or unintended actions.</li>
+                <li>Low Physical Effort: The design can be used efficiently and comfortably and with a minimum of fatigue.</li>
+                <li>Size and Space for Approach and Use: Appropriate size and space is provided for approach, reach, manipulation, and use regardless of user's body size, posture, or mobility</li>
+            </ul>
+        </aside>
 
-<aside>
-<h2> Supplementary social media links</h2>
-<ul>
-
-</ul>
-</aside>
-
-<footer>
-<p class=" linkfont">Designed by Alex Norby</p> 
-<address>alno1200@colorado.edu</address>
-<small>&copy; 2024</small>
-</footer>
-</div> <!-- End container -->
+        <footer>
+            <p style = "color: black;">&copy; 2024 Universal Design Project. Made by Alex Norby</p>
+        </footer>
+    </div>
 </body>
-
 </html>
